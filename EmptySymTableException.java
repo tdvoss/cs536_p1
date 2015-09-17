@@ -13,6 +13,14 @@
 import java.io.*;
 import java.util.*;
 
+/**
+ * EmptySymTableException
+ * 
+ * This class extends Exception and this exception should be thrown if a
+ * method is called on an empty SymTable (the SymTable is an empty list)
+ *
+ * @author Tiffany Voss
+ */
 public class EmptySymTableException extends Exception
 {
     

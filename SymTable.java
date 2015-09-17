@@ -13,6 +13,15 @@
 import java.io.*;
 import java.util.*;
 
+/**
+ * SymTable
+ * 
+ * This class holds a list of HashMaps, each of which correspond to a specific
+ * scope for tokens. The HashMaps map the tokens based on their given name. The
+ * end result is an organized list of each scope and the valid tokens within.
+ *
+ * @author Tiffany Voss
+ */
 public class SymTable
 {
     /* List of the HashMaps holding symbols. Each HashMap represents a 

@@ -13,6 +13,15 @@
 import java.io.*;
 import java.util.*;
 
+/**
+ * DuplicateSymException
+ * 
+ * This class extends Exception and this exception should be thrown if a Sym
+ * is added to a SymTable HashMap that already contains a Sym with the same
+ * name.
+ *
+ * @author Tiffany Voss
+ */
 public class DuplicateSymException extends Exception
 {
     
