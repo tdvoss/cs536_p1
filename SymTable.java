@@ -107,8 +107,10 @@ public class SymTable
             throw new EmptySymTableException();
         }
         
-        for (int i = 0; sym == null && i < table.size(); i++){
-            sym = this.table.get(i).get(name);
+        Iterator itr = this.table.iterator();
+        HashMap<String,Sym> map = new HashMap<String,Sym>();
+        while(itr.hasNext() && sym == null){
+             sym = ((HashMap<String,Sym>)itr.next()).get(name);
         }
         
         return sym;
@@ -136,8 +138,9 @@ public class SymTable
     public void print()
     {
         System.out.print("\nSym Table\n");
-        for(int i = 0; i < this.table.size(); i++){
-            System.out.println(this.table.get(i).toString());
+        Iterator itr = this.table.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next());
         }
     }
 }
